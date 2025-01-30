@@ -23,6 +23,9 @@ app.post('/submit-order', (req, res) => {
     console.log(req.body)
     res.send(`<h1>Thank you for your appointment ${req.body.fname}</h1>`)
 })
+app.get('/admin/orders', (req, res) =>{
+    res.send(info)
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
